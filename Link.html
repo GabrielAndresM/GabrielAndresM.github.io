@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="Mision%20Vision%20y%20Objetivos.html" class="nav-item">Bottsugar</a>
+        <a href="Productos.html" class="nav-item">Productos</a>
+        <a href="Sedes.html" class="nav-item">Sedes</a>
+        <a href="Contactos.html" class="nav-item">Contactos</a>
+        <a href="Galeria.html" class="nav-item">Galería</a>
+        <a href="Formulario.html" class="nav-item">Formulario</a>
+        <a href="Link.html" class="nav-item">Link</a>
+        <a href="http://localhost/bottsugar/controlador/login.php" class="nav-item">Registrarse / Ingresar</a>
+    </nav>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var navBar = document.querySelector('.nav-bar');
+            if (window.scrollY > 50) { // Cambia 50 a la distancia en la que quieres que cambie el color
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <footer class="footer">
+      <div class="footer-content">
+          <!-- Sección principal del footer -->
+          <div class="footer-columns">
+              <!-- Primera columna: Enlaces importantes -->
+              <div class="footer-column">
+                  <h3>Enlaces Importantes</h3>
+                  <ul>
+                      <li><a href="#">Noticias</a></li>
+                      <li><a href="#">Productos</a></li>
+                      <li><a href="#">Soporte</a></li>
+                      <li><a href="#">Empleo</a></li>
+                      <li><a href="#">Tienda</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Segunda columna: Información legal -->
+              <div class="footer-column">
+                  <h3>Legal</h3>
+                  <ul>
+                      <li><a href="#">Términos de servicio</a></li>
+                      <li><a href="#">Política de privacidad</a></li>
+                      <li><a href="#">Política de cookies</a></li>
+                      <li><a href="#">Licencias</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Tercera columna: Redes sociales -->
+              <div class="footer-column">
+                  <h3>Síguenos</h3>
+                  <ul class="social-media">
+                      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                      <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                      <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Sección del logo -->
+          <div class="footer-logo">
+              <img src="bitmap92.png" alt="Logo de la Empresa">
+          </div>
+  
+          <!-- Derechos reservados -->
+          <div class="footer-legal">
+              <p>&copy; 2024 Bottsugar. Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>

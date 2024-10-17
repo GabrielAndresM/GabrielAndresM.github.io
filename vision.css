@@ -1,0 +1,98 @@
+
+
+.mission-vision {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mission, .vision {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.mission h2, .vision h2 {
+    text-align: center;
+}
+
+.mission p, .vision p {
+    text-align: center;
+}
+
+.section-image {
+    display: block;
+    margin: 0 auto 20px auto; /* Centra la imagen y añade margen inferior */
+    max-width: 100%; /* Asegura que la imagen no se salga de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+.vision .paf{
+    font-size: 21px;
+    color: white;
+    background-color: #2b2b2b;
+}
+.mission .paf{
+    font-size: 21px;
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.objectives .paf{
+    font-size: 21px;
+    color: white;
+    background-color: #2b2b2b;
+}
+
+.paf, ul {
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    overflow: hidden;
+}
+
+.objectives {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    text-align: center;
+}
+
+.objectives h2 {
+    text-align: center;
+}
+
+.objectives ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.objectives ul li {
+    margin-bottom: 10px;
+}
+/* Aplica el efecto de ampliación y bordes curvos a todas las imágenes en general */
+img {
+    transition: transform 0.3s ease; /* Transición suave de 0.3 segundos */
+    border-radius: 15px; /* Bordes redondeados, ajusta el valor según tu preferencia */
+}
+
+/* Ampliación al pasar el cursor sobre la imagen */
+img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen un 10% */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle un efecto visual adicional */
+}
+
+.mission .paf, .vision .paf, .objectives .paf {
+    font-size: 21px;
+    color: white;
+    background-color: #2b2b2b;
+    padding: 20px; /* Espaciado interior para el texto */
+    border-radius: 25px; /* Esto crea los bordes curvos */
+    max-width: 600px; /* Opcional: limitar el ancho del texto */
+    margin: 20px auto; /* Centrar el texto y añadir espacio alrededor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra para efecto visual */
+}

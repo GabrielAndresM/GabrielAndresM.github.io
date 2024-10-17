@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="Mision%20Vision%20y%20Objetivos.html" class="nav-item">Bottsugar</a>
+        <a href="Productos.html" class="nav-item">Productos</a>
+        <a href="Sedes.html" class="nav-item">Sedes</a>
+        <a href="Contactos.html" class="nav-item">Contactos</a>
+        <a href="Galeria.html" class="nav-item">Galería</a>
+        <a href="Formulario.html" class="nav-item">Formulario</a>
+        <a href="Link.html" class="nav-item">Link</a>
+        <a href="http://localhost/bottsugar/controlador/login.php" class="nav-item">Registrarse / Ingresar</a>
+    </nav>
+
+    <div class="product-image-container">
+        <img src="Producto1" alt="Producto Bottsugar" class="product-image">
+    </div>
+
+    <!-- Título debajo de la imagen principal -->
+    <h2 class="product-title">Productos</h2>
+
+    <!-- Imagen que sirve como enlace a la sección más abajo -->
+    <div class="link-image-container">
+        <a href="#section-detail">
+            <img src="Producto2.png" alt="Enlace a sección detallada" class="link-image">
+        </a>
+    </div>
+
+    <!-- Sección con imagen y texto en columnas -->
+    <section id="section-detail" class="detail-section">
+        <div class="detail-image">
+            <img src="prototipo.jpeg" alt="Detalle del producto">
+        </div>
+        <div class="detail-text">
+            <h3>BTS® 01</h3>
+            <p>A través de un proceso de centrifugado, el azúcar líquido se<br>
+                expulsa a alta velocidad y se solidifica al contacto con el aire,<br>
+                formando hebras finas. El brazo guía un palo para recoger el algodón<br>
+                de azúcar, que luego se presenta en su forma final.</p>
+        </div>
+    </section>
+
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var navBar = document.querySelector('.nav-bar');
+            if (window.scrollY > 50) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="footer-columns">
+              <div class="footer-column">
+                  <h3>Enlaces Importantes</h3>
+                  <ul>
+                      <li><a href="#">Noticias</a></li>
+                      <li><a href="#">Productos</a></li>
+                      <li><a href="#">Soporte</a></li>
+                      <li><a href="#">Empleo</a></li>
+                      <li><a href="#">Tienda</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Legal</h3>
+                  <ul>
+                      <li><a href="#">Términos de servicio</a></li>
+                      <li><a href="#">Política de privacidad</a></li>
+                      <li><a href="#">Política de cookies</a></li>
+                      <li><a href="#">Licencias</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Síguenos</h3>
+                  <ul class="social-media">
+                      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                      <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                      <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-logo">
+              <img src="bitmap92.png" alt="Logo de la Empresa">
+          </div>
+          <div class="footer-legal">
+              <p>&copy; 2024 Bottsugar. Todos los derechos reservados.</p>
+          </div>
+      </div>
+    </footer>
+
+</body>
+</html>

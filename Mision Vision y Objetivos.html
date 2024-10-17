@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vision.css">
+</head>
+<body>
+
+
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="Mision%20Vision%20y%20Objetivos.html" class="nav-item">Bottsugar</a>
+        <a href="Productos.html" class="nav-item">Productos</a>
+        <a href="Sedes.html" class="nav-item">Sedes</a>
+        <a href="Contactos.html" class="nav-item">Contactos</a>
+        <a href="Galeria.html" class="nav-item">Galería</a>
+        <a href="Formulario.html" class="nav-item">Formulario</a>
+        <a href="Link.html" class="nav-item">Link</a>
+        <a href="http://localhost/bottsugar/controlador/login.php" class="nav-item">Registrarse / Ingresar</a>
+    </nav>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var navBar = document.querySelector('.nav-bar');
+            if (window.scrollY > 50) { // Cambia 50 a la distancia en la que quieres que cambie el color
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <section class="mission-vision">
+
+        <div class="mission">
+            <h2>Misión</h2>
+            <img id="mission-image" src="Mision.jpg.png" alt="Imagen de Misión" class="section-image">
+            <p id="mission-text" class="paf" style="display: none;">Brindamos a nuestros clientes algodón de azúcar de la más alta calidad, producido de manera eficiente y sostenible con tecnología automatizada. Nos dedicamos a ofrecer una experiencia deliciosa y divertida para todas las edades, mientras apoyamos el medio ambiente y nuestra comunidad con prácticas responsables.</p>
+        </div>
+
+        <div class="vision">
+            <h2>Visión</h2>
+            <img id="vision-image" src="Vision.jpg.png" alt="Imagen de Visión" class="section-image">
+            <p id="vision-text" class="paf" style="display: none;">Buscamos ser líderes en la industria de dulces, destacando por nuestra innovación y calidad, con un firme compromiso con la sostenibilidad. Nos enfocamos en tecnologías avanzadas para una producción eficiente de algodón de azúcar y aspiramos a expandirnos globalmente, ofreciendo alegría y estableciendo prácticas responsables.</p>
+        </div>
+
+    </section>
+
+    <section class="objectives">
+        <div class="objectives">
+            <h2>Objetivos</h2>
+            <img id="objectives-image" src="Objetivo.jpg.png" alt="Imagen de Objetivos" class="section-image">
+            <ul id="objectives-text" style="display: none;">
+                <li class="paf">Aumentar la velocidad y eficiencia de producción.</li>
+                <li class="paf">Mejorar la consistencia y calidad del producto.</li>
+                <li class="paf">Reducir costos operativos.</li>
+                <li class="paf">Minimizar el desperdicio de materia prima.</li>
+                <li class="paf">Cumplir con estándares de seguridad alimentaria y normativas</li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        // Función para alternar el texto
+        function toggleText(imageId, textId) {
+            var textElement = document.getElementById(textId);
+            
+            if (textElement.style.display === "none") {
+                textElement.style.display = "block"; // Mostrar el texto
+            } else {
+                textElement.style.display = "none"; // Ocultar el texto
+            }
+        }
+    
+        // Añadir evento de click para la imagen de Misión
+        document.getElementById('mission-image').addEventListener('click', function() {
+            toggleText('mission-image', 'mission-text');
+        });
+    
+        // Añadir evento de click para la imagen de Visión
+        document.getElementById('vision-image').addEventListener('click', function() {
+            toggleText('vision-image', 'vision-text');
+        });
+    
+        // Añadir evento de click para la imagen de Objetivos
+        document.getElementById('objectives-image').addEventListener('click', function() {
+            toggleText('objectives-image', 'objectives-text');
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Sección principal del footer -->
+            <div class="footer-columns">
+                <!-- Primera columna: Enlaces importantes -->
+                <div class="footer-column">
+                    <h3>Enlaces Importantes</h3>
+                    <ul>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Soporte</a></li>
+                        <li><a href="#">Empleo</a></li>
+                        <li><a href="#">Tienda</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Segunda columna: Información legal -->
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Licencias</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Tercera columna: Redes sociales -->
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <ul class="social-media">
+                        <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="instagram.jpg" alt="Instagram"></a></li>
+                        <li><a href="#"><img src="Mision Vision y Objetivos.html" alt="YouTube"></a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Sección del logo -->
+            <div class="footer-logo">
+                <img src="bitmap92.png" alt="Logo de la Empresa">
+            </div>
+    
+            <!-- Derechos reservados -->
+            <div class="footer-legal">
+                <p>&copy; 2024 Bottsugar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

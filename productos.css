@@ -1,0 +1,140 @@
+/* Navbar estilos */
+.nav-bar {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: #333;
+}
+
+.nav-item {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Estilos para la imagen del producto */
+.product-image-container {
+    text-align: center;
+    margin: 150px 0;  /* Ajusta el margen si es necesario */
+}
+
+.product-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el título debajo de la imagen principal */
+.product-title {
+    text-align: center;
+    font: 700 24px / 32px Noto-regional, Noto-latin, TCCC-UnityText, sans-serif;
+    margin: 0px 0;
+}
+
+/* Imagen que sirve como enlace */
+.link-image-container {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 200px;
+}
+
+.link-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de detalle con imagen y texto en columnas */
+.detail-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.detail-image {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px; /* Espaciado entre imagen y texto */
+}
+
+.detail-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.detail-text {
+    color: aliceblue;
+    margin-left: 100px;
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Estilo para el título dentro de detail-text */
+
+.detail-text h3 {
+    margin: 0 auto; /* Centra el título */
+    margin-bottom: 80px;
+    padding: 10px 20px; /* Ajusta el relleno para que el fondo esté más cerca del texto */
+    font-size: 34px;
+    background-color: #2b2b2b;
+    border-radius: 25px;
+    display: inline-block; /* Elimina el ancho completo del bloque y ajusta al tamaño del contenido */
+}
+
+
+/* Estilo para el párrafo dentro de detail-text */
+.detail-text p {
+    margin-top: 10px;
+    padding: 10px 20px; /* Ajusta el relleno del párrafo */
+    font-size: 21px;
+    background-color: #2b2b2b;
+    border-radius: 25px;
+    display: inline-block; /* Ajusta al tamaño del contenido */
+}
+
+
+/* Footer estilos */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-legal {
+    text-align: center;
+    margin-top: 20px;
+}

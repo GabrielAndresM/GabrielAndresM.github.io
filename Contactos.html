@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 1px;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 30px;
+            text-align: center;
+        }
+        th {
+            background-color: #8814be;
+            color: white;
+        }
+        img {
+            width: 50px; /* Ajusta el tamaño de las imágenes */
+            height: auto;
+            border-radius: 50%; /* Para hacer las imágenes redondas */
+        }
+        tr:hover {
+            background-color: #f1f1f1; /* Efecto hover */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tabla de Contactos</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Contacto</th>
+            <th>Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="gmail.png" alt="Correo Electronico"></td>
+            <td>Correo Electronico</td>
+            <td>bottsug4r@gmail.com</td>
+            <td>(123) 456-7890</td>
+        </tr>
+        <tr>
+            <td><img src="tiktok.png" alt="Tik Tok"></td>
+            <td>Tik Tok</td>
+            <td>@bottsug4r</td>
+            <td>(098) 765-4321</td>
+        </tr>
+        <tr>
+            <td><img src="instagram.png" alt="Instagram"></td>
+            <td>Instagram</td>
+            <td>bottsug4r</td>
+            <td>(098) 765-4321</td>
+        </tr>
+        <tr>
+            <td><img src="whatsapp.png" alt="Whatsapp"></td>
+            <td>Whatsapp</td>
+            <td>321 3605255</td>
+            <td>315 4557688</td>
+        </tr>
+        <!-- Agrega más filas según sea necesario -->
+    </tbody>
+</table>
+
+</body>
+</html>
+</head>
+
+<body>
+
+
+
+
+
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-item">Inicio</a>
+        <a href="Mision%20Vision%20y%20Objetivos.html" class="nav-item">Bottsugar</a>
+        <a href="Productos.html" class="nav-item">Productos</a>
+        <a href="Sedes.html" class="nav-item">Sedes</a>
+        <a href="Contactos.html" class="nav-item">Contactos</a>
+        <a href="Galeria.html" class="nav-item">Galería</a>
+        <a href="Formulario.html" class="nav-item">Formulario</a>
+        <a href="Link.html" class="nav-item">Link</a>
+        <a href="http://localhost/bottsugar/controlador/login.php" class="nav-item">Registrarse / Ingresar</a>
+    </nav>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            var navBar = document.querySelector('.nav-bar');
+            if (window.scrollY > 50) { // Cambia 50 a la distancia en la que quieres que cambie el color
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <footer class="footer">
+      <div class="footer-content">
+          <!-- Sección principal del footer -->
+          <div class="footer-columns">
+              <!-- Primera columna: Enlaces importantes -->
+              <div class="footer-column">
+                  <h3>Enlaces Importantes</h3>
+                  <ul>
+                      <li><a href="#">Noticias</a></li>
+                      <li><a href="#">Productos</a></li>
+                      <li><a href="#">Soporte</a></li>
+                      <li><a href="#">Empleo</a></li>
+                      <li><a href="#">Tienda</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Segunda columna: Información legal -->
+              <div class="footer-column">
+                  <h3>Legal</h3>
+                  <ul>
+                      <li><a href="#">Términos de servicio</a></li>
+                      <li><a href="#">Política de privacidad</a></li>
+                      <li><a href="#">Política de cookies</a></li>
+                      <li><a href="#">Licencias</a></li>
+                  </ul>
+              </div>
+  
+              <!-- Tercera columna: Redes sociales -->
+              <div class="footer-column">
+                  <h3>Síguenos</h3>
+                  <ul class="social-media">
+                      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                      <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                      <li><a href="#"><img src="youtube.png" alt="YouTube"></a></li>
+                  </ul>
+              </div>
+          </div>
+  
+          <!-- Sección del logo -->
+          <div class="footer-logo">
+              <img src="bitmap92.png" alt="Logo de la Empresa">
+          </div>
+  
+          <!-- Derechos reservados -->
+          <div class="footer-legal">
+              <p>&copy; 2024 Bottsugar. Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>
